@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshika Gupta - Resume</title>
+</head>
+<body>
+
+    <header>
+        <h1>Anshika Gupta</h1>
+        <p>BCA (Artificial Intelligence) Student</p>
+        <p>Email: your-email@example.com</p>
+        <p>GitHub: anshikagupta0700</p>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section>
+            <h2>Career Objective</h2>
+            <p>
+                I want to become a Data Analyst and improve my
+                technical and analytical skills.
+            </p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <article>
+                <h3>BCA (Artificial Intelligence)</h3>
+                <p>Invertis University, Bareilly</p>
+            </article>
+            <article>
+                <h3>Class 12</h3>
+                <p>CBSE Board</p>
+            </article>
+            <article>
+                <h3>Class 10</h3>
+                <p>CBSE Board</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>MS Excel</li>
+                <li>Power BI</li>
+                <li>HTML</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <article>
+                <h3>Sales Dashboard</h3>
+                <p>Created a sales dashboard using Power BI.</p>
+            </article>
+            <article>
+                <h3>To-Do Manager</h3>
+                <p>Created a task management program using Python.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Strengths</h2>
+            <ul>
+                <li>Quick Learner</li>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Thank you for viewing my resume.</p>
+    </footer>
+
+</body>
+</html>
