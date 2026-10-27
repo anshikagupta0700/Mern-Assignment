@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College and Course</title>
+</head>
+<body>
+
+    <header>
+        <h1>My College and Course</h1>
+        <p>Welcome to my college webpage!</p>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>My College</h2>
+        <p>College Name: Invertis University</p>
+        <p>Location: Bareilly, Uttar Pradesh</p>
+    </section>
+
+    <section>
+        <h2>My Course</h2>
+        <p>Course: Bachelor of Computer Applications (BCA)</p>
+        <p>Specialization: Artificial Intelligence (AI)</p>
+    </section>
+
+    <section>
+        <h2>My Subjects</h2>
+        <ul>
+            <li>Programming in Java</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Python Programming</li>
+            <li>Web Development</li>
+            <li>Data Analytics</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Why I Chose This Course</h2>
+        <p>
+            I chose BCA in Artificial Intelligence because
+            I am interested in computers, programming,
+            and data analysis.
+        </p>
+    </section>
+
+    <section>
+        <h2>My Career Goal</h2>
+        <p>
+            My goal is to become a Data Analyst and develop
+            my technical and analytical skills.
+        </p>
+    </section>
+
+    <footer>
+        <hr>
+        <p>Thank you for visiting my webpage!</p>
+    </footer>
+
+</body>
+</html>
