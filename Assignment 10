@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Introduction</title>
+</head>
+<body>
+
+    <header>
+        <h1>Hello, I am Anshika Gupta</h1>
+        <p>Welcome to my personal webpage!</p>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            My name is Anshika Gupta. I am a BCA student
+            specializing in Artificial Intelligence at
+            Invertis University, Bareilly.
+        </p>
+    </section>
+
+    <section>
+        <h2>My Education</h2>
+        <p>I am pursuing BCA in Artificial Intelligence.</p>
+    </section>
+
+    <section>
+        <h2>My Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>MS Excel</li>
+            <li>HTML</li>
+            <li>Power BI</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Learning new technologies</li>
+            <li>Practicing coding</li>
+            <li>Listening to music</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>My Career Goal</h2>
+        <p>
+            My goal is to become a successful Data Analyst
+            and build a good career in the IT industry.
+        </p>
+    </section>
+
+    <footer>
+        <p>Thank you for visiting my webpage!</p>
+    </footer>
+
+</body>
+</html>
