@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Resume</title>
+</head>
+<body>
+
+    <h1>Anshika Gupta</h1>
+    <p>BCA (Artificial Intelligence) Student</p>
+
+    <hr>
+
+    <h2>Career Objective</h2>
+    <p>
+        I want to become a Data Analyst and improve my technical
+        and analytical skills.
+    </p>
+
+    <h2>Education</h2>
+    <ul>
+        <li>BCA (AI) - Invertis University</li>
+        <li>Class 12 - CBSE Board</li>
+        <li>Class 10 - CBSE Board</li>
+    </ul>
+
+    <h2>Technical Skills</h2>
+    <ul>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>MS Excel</li>
+        <li>Power BI</li>
+        <li>HTML</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+        <li>Sales Dashboard using Power BI</li>
+        <li>To-Do Manager using Python</li>
+    </ul>
+
+    <h2>Strengths</h2>
+    <ul>
+        <li>Quick Learner</li>
+        <li>Problem Solving</li>
+        <li>Teamwork</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Email: your-anshikagupta0700@gmail.com</p>
+    <p>GitHub: anshikagupta0700</p>
+
+</body>
+</html>
