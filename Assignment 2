@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First Webpage</title>
+</head>
+<body>
+
+    <h1>Welcome to My Webpage</h1>
+
+    <p>Hello! My name is Anshika.</p>
+
+    <h2>About Me</h2>
+    <p>I am a BCA AI student.</p>
+
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Learning Coding</li>
+        <li>Reading</li>
+        <li>Listening to Music</li>
+    </ul>
+
+    <button onclick="alert('Hello!')">Click Me</button>
+
+</body>
+</html>
