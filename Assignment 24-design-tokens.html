@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Tokens</title>
+
+    <style>
+        /* CSS Design Tokens */
+        :root {
+            --primary-color: #315b85;
+            --secondary-color: #dceaf7;
+            --background-color: #f4f7fb;
+            --text-color: #333333;
+            --white-color: #ffffff;
+            --success-color: #27864b;
+
+            --heading-size: 30px;
+            --paragraph-size: 16px;
+
+            --small-spacing: 10px;
+            --medium-spacing: 20px;
+            --large-spacing: 30px;
+
+            --card-radius: 12px;
+        }
+
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: var(--large-spacing);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            text-align: center;
+            padding: var(--large-spacing);
+            border-radius: var(--card-radius);
+        }
+
+        h1 {
+            font-size: var(--heading-size);
+        }
+
+        p {
+            font-size: var(--paragraph-size);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: var(--white-color);
+            padding: var(--medium-spacing);
+            margin-top: var(--medium-spacing);
+            border-radius: var(--card-radius);
+        }
+
+        h2 {
+            color: var(--primary-color);
+        }
+
+        .highlight {
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            border: none;
+            padding: var(--small-spacing) var(--medium-spacing);
+            border-radius: var(--card-radius);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: var(--success-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: var(--large-spacing);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>CSS Design Tokens</h1>
+            <p>Creating a Consistent Website Design</p>
+        </header>
+
+        <section class="card">
+            <h2>About Design Tokens</h2>
+            <p>
+                Design tokens are reusable CSS variables
+                used to manage colours, fonts, spacing
+                and other design properties.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>My Skills</h2>
+            <p class="highlight">HTML and CSS</p>
+            <p>Python, SQL and Power BI</p>
+        </section>
+
+        <section class="card">
+            <h2>Reusable Button</h2>
+            <button>Learn More</button>
+        </section>
+
+        <footer>
+            <p>© 2026 My Design Tokens Project</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
