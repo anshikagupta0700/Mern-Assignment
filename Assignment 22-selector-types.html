@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Types</title>
+
+    <style>
+        /* 1. Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /* 2. Element Selector */
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        /* 3. Class Selector */
+        .highlight {
+            color: green;
+            background-color: lightyellow;
+            padding: 10px;
+        }
+
+        /* 4. ID Selector */
+        #main-heading {
+            color: purple;
+        }
+
+        /* 5. Group Selector */
+        h2, h3 {
+            color: darkorange;
+        }
+
+        /* 6. Descendant Selector */
+        div p {
+            color: blue;
+        }
+
+        /* 7. Child Selector */
+        div > h3 {
+            background-color: lightblue;
+            padding: 8px;
+        }
+
+        /* 8. Attribute Selector */
+        input[type="text"] {
+            border: 2px solid green;
+            padding: 8px;
+        }
+
+        /* 9. Pseudo-class Selector */
+        button:hover {
+            background-color: darkblue;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Selector Types</h1>
+
+    <h2 id="main-heading">ID Selector Example</h2>
+
+    <p class="highlight">
+        This paragraph uses a Class Selector.
+    </p>
+
+    <h2>Element and Group Selector</h2>
+    <h3>This is a heading using Group Selector.</h3>
+
+    <div>
+        <p>This paragraph uses Descendant Selector.</p>
+
+        <h3>This heading uses Child Selector.</h3>
+    </div>
+
+    <h2>Attribute Selector Example</h2>
+    <input type="text" placeholder="Enter your name">
+
+    <br><br>
+
+    <button>Hover Over Me</button>
+
+</body>
+</html>
