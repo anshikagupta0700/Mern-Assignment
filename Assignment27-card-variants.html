@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Variants</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5fa;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #243b55;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            width: 260px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h2 {
+            color: #243b55;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #243b55;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background-color: #456b91;
+        }
+
+        /* Featured Card */
+        .featured {
+            border: 3px solid #e6a23c;
+        }
+
+        /* Dark Card */
+        .dark {
+            background-color: #243b55;
+            color: white;
+        }
+
+        .dark h2,
+        .dark p {
+            color: white;
+        }
+
+        /* Simple Card */
+        .simple {
+            border: 1px solid #ddd;
+            box-shadow: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Different Types of Cards</h1>
+
+    <div class="container">
+
+        <!-- Simple Card -->
+        <div class="card simple">
+            <h2>Simple Card</h2>
+            <p>This is a basic card design with a clean layout.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <!-- Featured Card -->
+        <div class="card featured">
+            <h2>Featured Card</h2>
+            <p>This card has a special border to highlight important content.</p>
+            <a href="#" class="btn">Explore</a>
+        </div>
+
+        <!-- Dark Card -->
+        <div class="card dark">
+            <h2>Dark Card</h2>
+            <p>This card uses a dark background with white text.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <!-- Shadow Card -->
+        <div class="card">
+            <h2>Shadow Card</h2>
+            <p>This card uses a shadow effect to look attractive.</p>
+            <a href="#" class="btn">View Details</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Created using HTML and CSS | Card Variants Assignment</p>
+    </footer>
+
+</body>
+</html>
