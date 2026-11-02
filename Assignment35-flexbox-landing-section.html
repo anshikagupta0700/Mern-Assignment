@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Landing Section</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #243b55;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: #ffd166;
+        }
+
+        /* Landing Section */
+        .landing {
+            min-height: 500px;
+            padding: 60px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+
+            background-color: #e3edf9;
+        }
+
+        /* Left Content */
+        .content {
+            flex: 1;
+        }
+
+        .content h1 {
+            color: #243b55;
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #243b55;
+            color: white;
+            padding: 13px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            background-color: #456b91;
+        }
+
+        .secondary {
+            background-color: white;
+            color: #243b55;
+            border: 2px solid #243b55;
+        }
+
+        /* Right Image */
+        .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image img {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 15px;
+        }
+
+        /* Features */
+        .features {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .features h2 {
+            color: #243b55;
+            margin-bottom: 25px;
+        }
+
+        .feature-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #243b55;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #243b55;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 700px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .menu {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .landing {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 20px;
+            }
+
+            .content h1 {
+                font-size: 32px;
+            }
+
+            .image img {
+                max-width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="logo">MyWebsite</div>
+
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Landing Section -->
+    <section class="landing" id="home">
+
+        <div class="content">
+
+            <h1>Build Your Future With Technology</h1>
+
+            <p>
+                Learn modern web development and create
+                beautiful websites using HTML, CSS and
+                Flexbox. Start your learning journey today!
+            </p>
+
+            <a href="#features" class="btn">Get Started</a>
+
+            <a href="#about" class="btn secondary">
+                Learn More
+            </a>
+
+        </div>
+
+        <div class="image">
+
+            <img
+                src="https://placehold.co/500x350/dce9f7/243b55?text=Web+Development"
+                alt="Web Development Illustration"
+            >
+
+        </div>
+
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+
+        <h2>Why Choose Us?</h2>
+
+        <div class="feature-container">
+
+            <div class="card">
+                <h3>Easy Learning</h3>
+                <p>Learn web development with simple examples.</p>
+            </div>
+
+            <div class="card">
+                <h3>Modern Design</h3>
+                <p>Create attractive and professional websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>Responsive Layout</h3>
+                <p>Build websites for mobile and desktop screens.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="features" id="about">
+        <h2>About Us</h2>
+        <p>We help students learn web development practically.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Created using HTML and CSS | 2026</p>
+    </footer>
+
+</body>
+</html>
