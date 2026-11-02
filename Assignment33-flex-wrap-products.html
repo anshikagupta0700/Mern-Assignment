@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap Products</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5fa;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #243b55;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Product Container */
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        /* Product Card */
+        .product-card {
+            background-color: white;
+            width: 230px;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-7px);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            color: #243b55;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .price {
+            color: #16834a;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #243b55;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background-color: #456b91;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Products</h1>
+
+    <p class="subtitle">
+        Explore our latest collection of products
+    </p>
+
+    <div class="product-container">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="https://placehold.co/230x150?text=Laptop"
+                 alt="Laptop" class="product-img">
+
+            <h3>Laptop</h3>
+            <p>High performance laptop for daily use.</p>
+            <div class="price">₹45,999</div>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="https://placehold.co/230x150?text=Headphones"
+                 alt="Headphones" class="product-img">
+
+            <h3>Headphones</h3>
+            <p>Wireless headphones with clear sound.</p>
+            <div class="price">₹1,499</div>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="https://placehold.co/230x150?text=Smartphone"
+                 alt="Smartphone" class="product-img">
+
+            <h3>Smartphone</h3>
+            <p>Modern smartphone with great features.</p>
+            <div class="price">₹18,999</div>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="https://placehold.co/230x150?text=Smartwatch"
+                 alt="Smartwatch" class="product-img">
+
+            <h3>Smartwatch</h3>
+            <p>Track your fitness and daily activities.</p>
+            <div class="price">₹2,999</div>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src="https://placehold.co/230x150?text=Keyboard"
+                 alt="Keyboard" class="product-img">
+
+            <h3>Keyboard</h3>
+            <p>Comfortable keyboard for typing.</p>
+            <div class="price">₹899</div>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+            <img src="https://placehold.co/230x150?text=Mouse"
+                 alt="Mouse" class="product-img">
+
+            <h3>Wireless Mouse</h3>
+            <p>Smooth and comfortable wireless mouse.</p>
+            <div class="price">₹599</div>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Created using HTML and CSS | 2026</p>
+    </footer>
+
+</body>
+</html>
