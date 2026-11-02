@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile and Product Cards</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5fa;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #243b55;
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #243b55;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        /* Common Card Styling */
+        .card {
+            background-color: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        /* Profile Card */
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .profile-card h3 {
+            color: #243b55;
+            margin-bottom: 10px;
+        }
+
+        .profile-card p {
+            color: #666;
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+
+        /* Product Card */
+        .product-img {
+            width: 100%;
+            height: 170px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            color: #243b55;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #16834a;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #243b55;
+            color: white;
+            padding: 11px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #456b91;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        footer {
+            text-align: center;
+            color: #666;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Profile and Product Cards</h1>
+
+    <!-- Profile Section -->
+    <section>
+        <h2>My Profile Card</h2>
+
+        <div class="container">
+
+            <div class="card profile-card">
+
+                <img
+                    src="https://placehold.co/150x150?text=Profile"
+                    alt="Profile Image"
+                    class="profile-img"
+                >
+
+                <h3>Student Name</h3>
+
+                <p>BCA Artificial Intelligence Student</p>
+
+                <p>Interested in Programming, Data Analytics
+                and Technology.</p>
+
+                <a href="#" class="btn">View Profile</a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section>
+        <h2>My Product Card</h2>
+
+        <div class="container">
+
+            <div class="card product-card">
+
+                <img
+                    src="https://placehold.co/250x170?text=Headphones"
+                    alt="Headphones"
+                    class="product-img"
+                >
+
+                <h3>Wireless Headphones</h3>
+
+                <p>High quality wireless headphones with
+                comfortable design.</p>
+
+                <div class="price">₹1,499</div>
+
+                <a href="#" class="btn">Buy Now</a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Created using HTML and CSS | 2026</p>
+    </footer>
+
+</body>
+</html>
