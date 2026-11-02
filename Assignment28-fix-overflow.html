@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Overflow in CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5fa;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #243b55;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .box {
+            width: 220px;
+            height: 150px;
+            padding: 15px;
+            background-color: #d8ecff;
+            border: 3px solid #243b55;
+            text-align: left;
+        }
+
+        .visible {
+            overflow: visible;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+
+        .auto {
+            overflow: auto;
+        }
+
+        .description {
+            background-color: white;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Overflow Property</h1>
+    <p>Learn how to handle extra content inside a box.</p>
+
+    <div class="container">
+
+        <div>
+            <h3>Overflow Visible</h3>
+            <div class="box visible">
+                This is a long paragraph. The content will come
+                outside the box because overflow is visible.
+                Extra content is not hidden.
+            </div>
+        </div>
+
+        <div>
+            <h3>Overflow Hidden</h3>
+            <div class="box hidden">
+                This is a long paragraph. The extra content
+                will be hidden when it goes outside the box.
+                You cannot see the remaining text.
+            </div>
+        </div>
+
+        <div>
+            <h3>Overflow Scroll</h3>
+            <div class="box scroll">
+                This is a long paragraph. You can scroll inside
+                this box to read all the remaining content.
+                Scrollbars are displayed.
+            </div>
+        </div>
+
+        <div>
+            <h3>Overflow Auto</h3>
+            <div class="box auto">
+                This is a long paragraph. A scrollbar will
+                appear only when the content overflows.
+                You can scroll to read everything.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="description">
+        <h2>CSS Overflow Properties</h2>
+
+        <p><b>1. Visible:</b> Extra content is displayed outside the box.</p>
+
+        <p><b>2. Hidden:</b> Extra content is hidden.</p>
+
+        <p><b>3. Scroll:</b> Scrollbars are provided to view extra content.</p>
+
+        <p><b>4. Auto:</b> Scrollbars appear when required.</p>
+    </div>
+
+</body>
+</html>
