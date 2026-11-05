@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f1f5f9;
+            color: #333;
+        }
+
+        .container {
+            display: grid;
+
+            grid-template-columns: 250px 1fr;
+
+            grid-template-rows: 70px 1fr 60px;
+
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+
+            min-height: 100vh;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        /* Header */
+        .header {
+            grid-area: header;
+            background-color: #1e293b;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px;
+            border-radius: 8px;
+        }
+
+        .header h2 {
+            margin: 0;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .profile {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .sidebar li {
+            padding: 12px;
+            margin: 8px 0;
+            background-color: #e2e8f0;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        .main {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            align-content: start;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        .about {
+            grid-column: span 2;
+        }
+
+        .skills {
+            grid-column: span 2;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background-color: #dbeafe;
+            color: #1d4ed8;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .project img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .project h3 {
+            color: #2563eb;
+        }
+
+        /* Footer */
+        .footer {
+            grid-area: footer;
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 700px) {
+            .container {
+                grid-template-columns: 1fr;
+
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "main"
+                    "footer";
+            }
+
+            .main {
+                grid-template-columns: 1fr;
+            }
+
+            .about,
+            .skills {
+                grid-column: span 1;
+            }
+
+            .header {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <h2>My Portfolio</h2>
+
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </nav>
+
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <img
+                class="profile"
+                src="https://picsum.photos/200"
+                alt="Profile Photo"
+            >
+
+            <h2>Anshika Gupta</h2>
+
+            <p>BCA Artificial Intelligence Student</p>
+
+            <hr>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+                <li>Home</li>
+                <li>My Profile</li>
+                <li>Education</li>
+                <li>Contact</li>
+            </ul>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <section class="section about" id="about">
+
+                <h2>About Me</h2>
+
+                <p>
+                    Hello! I am a BCA Artificial Intelligence student.
+                    I am interested in technology, programming
+                    and web development.
+                    I love learning new skills and building projects.
+                </p>
+
+            </section>
+
+            <section class="section skills" id="skills">
+
+                <h2>My Skills</h2>
+
+                <div class="skill-list">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">SQL</span>
+                    <span class="skill">Power BI</span>
+                </div>
+
+            </section>
+
+            <section class="section project" id="projects">
+
+                <h2>Project 1</h2>
+
+                <img src="https://picsum.photos/400/200?random=21"
+                     alt="Portfolio Project">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A personal portfolio website
+                    created using HTML and CSS.
+                </p>
+
+            </section>
+
+            <section class="section project">
+
+                <h2>Project 2</h2>
+
+                <img src="https://picsum.photos/400/200?random=22"
+                     alt="Dashboard Project">
+
+                <h3>Sales Dashboard</h3>
+
+                <p>
+                    A dashboard project created
+                    using Power BI.
+                </p>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <p>© 2026 My Portfolio | All Rights Reserved</p>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
