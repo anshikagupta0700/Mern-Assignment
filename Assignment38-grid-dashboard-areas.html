@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Dashboard Areas</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .dashboard {
+            display: grid;
+
+            grid-template-columns: 220px 1fr;
+
+            grid-template-rows: 70px 1fr 50px;
+
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+
+            min-height: 100vh;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #2563eb;
+            color: white;
+            padding: 20px;
+            font-size: 22px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #1e293b;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            padding: 12px;
+            margin-bottom: 10px;
+            background-color: #334155;
+            border-radius: 5px;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .card {
+            background-color: #dbeafe;
+            padding: 25px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .card h2 {
+            color: #2563eb;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 650px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+
+                grid-template-rows: auto;
+
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "main"
+                    "footer";
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header class="header">
+            My Dashboard
+        </header>
+
+        <aside class="sidebar">
+            <h3>Menu</h3>
+
+            <ul>
+                <li>Home</li>
+                <li>Profile</li>
+                <li>Settings</li>
+                <li>Reports</li>
+            </ul>
+        </aside>
+
+        <main class="main">
+
+            <h2>Dashboard Overview</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h2>120</h2>
+                    <p>Total Students</p>
+                </div>
+
+                <div class="card">
+                    <h2>45</h2>
+                    <p>Projects</p>
+                </div>
+
+                <div class="card">
+                    <h2>85%</h2>
+                    <p>Attendance</p>
+                </div>
+
+            </div>
+
+            <h2>Welcome!</h2>
+            <p>
+                This is a simple dashboard created
+                using CSS Grid Template Areas.
+            </p>
+
+        </main>
+
+        <footer class="footer">
+            © 2026 My Dashboard
+        </footer>
+
+    </div>
+
+</body>
+</html>
