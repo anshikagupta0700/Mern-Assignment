@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid and Flex Landing Page</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background-color: white;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 40px;
+            padding: 70px 8%;
+            background-color: #dbeafe;
+        }
+
+        .hero-content h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #1e3a8a;
+        }
+
+        .hero-content p {
+            font-size: 17px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 12px 22px;
+            border: none;
+            border-radius: 6px;
+            background-color: #2563eb;
+            color: white;
+            cursor: pointer;
+        }
+
+        .secondary {
+            background-color: #1e293b;
+        }
+
+        .hero img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 8%;
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .feature-card h3 {
+            margin: 15px 0;
+            color: #2563eb;
+        }
+
+        .feature-card p {
+            line-height: 1.5;
+        }
+
+        /* About Section */
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 30px;
+            padding: 60px 8%;
+            background-color: #e2e8f0;
+        }
+
+        .about img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .about-content h2 {
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e293b;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        /* Tablet */
+        @media (max-width: 900px) {
+
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 40px 6%;
+            }
+
+            .hero-content h1 {
+                font-size: 28px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+                padding: 40px 6%;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+        <div class="logo">MyWebsite</div>
+
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>Build Your Future With Us</h1>
+
+                <p>
+                    Welcome to our website. We provide
+                    simple and modern solutions to help
+                    you learn, grow and achieve your goals.
+                </p>
+
+                <div class="buttons">
+                    <button>Get Started</button>
+                    <button class="secondary">Learn More</button>
+                </div>
+
+            </div>
+
+            <img
+                src="https://picsum.photos/600/400?random=51"
+                alt="Hero Image"
+            >
+
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+
+            <h2>Our Features</h2>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <h3>Easy Learning</h3>
+                    <p>Learn new skills with simple methods.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Modern Design</h3>
+                    <p>Enjoy a clean and attractive design.</p>
+                </div>
+
+                <div class="feature-card">
+                    <h3>Responsive</h3>
+                    <p>Works smoothly on all screen sizes.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+
+            <img
+                src="https://picsum.photos/600/400?random=52"
+                alt="About Us"
+            >
+
+            <div class="about-content">
+
+                <h2>About Our Website</h2>
+
+                <p>
+                    We believe in creating simple,
+                    useful and responsive websites.
+                    Our goal is to provide a better
+                    experience for every user.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+
+        <p>© 2026 MyWebsite. All Rights Reserved.</p>
+
+    </footer>
+
+</body>
+</html>
